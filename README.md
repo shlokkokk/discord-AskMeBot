@@ -97,10 +97,11 @@ Your bot will send a meme 😎
 ---
 
 ## 🧠 How It Works
-The bot uses:
-- `on_message()` to listen for messages  
-- A simple function `get_meme()` that fetches meme URLs  
-- The Meme API to grab fresh Reddit memes
+- Listens for messages using Discord's event system  
+- Fetches memes from the Meme API through a simple `get_meme()` function  
+- Extracts the meme URL from the API’s JSON response  
+- Sends the meme when users type `sendMeme`  
+- Includes basic error handling for safer API responses  
 
 ---
 
